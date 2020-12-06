@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+.wholeBar {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 250px;
+      position: relative;
+      top: 1px;
+      width: 100%;
+      background-image: url(images/image10.jpg);
+      background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    background-size: cover;
+    
+    
+      
+
+    }
+
+    .topbar {
+      position: absolute;
+      height: .018vw;
+      width: 100vw;
+      min-height: 15px;
+      font-size: clamp(10, 3vw, 13px);
+      padding-top: 5px;
+      padding-left: 16vw;
+      padding-right: 300px;
+      padding-bottom: 0.4vh;
+    }
+
+    div.topbar p {
+      color: black;
+      font-size: clamp(8px, 1.5rem, 20px);
+      width: 100%;
+    }
+
+    .header {
+      padding-top: 30px;
+      margin-bottom: 0px;
+      color: black;
+      padding-left: 16vw;
+      background: rgba(255, 255, 255, 0.5);
+      height: fit-content;
+    }
+
+    div.header p {
+      color: black;
+      font-size: clamp(20px, 1.5rem, 50px);
+      width: inherit;
+    }
+
+    div.header img {
+      opacity: 1;
+      min-width: 50px;
+      min-height: 75px;
+    }
+
+  
+
+    .navBar {
+      background: rgba(255, 255, 255, 0.5);
+      height: 40px;
+      color: black;
+      margin-top: 0px;
+      width: 100%;
+      height: 50px;
+      justify-content: space-evenly;
+      padding-left: 22vw;
+      display: flex;
+
+
+    }
+
+.navBar button {
+      background: rgba(243, 240, 240, 0);
+      height: 4vh;
+      width: fit-content;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-right: 4%;
+      border: none;
+      cursor: pointer;
+}
+
+.prospective ul, .academic ul {
+    position: absolute;
+    left: 0px;
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+    opacity: 0;
+    
+    transition: all 0.4s ease;
+    transform: translateY(10px);
+    
+    
+}
+
+.prospective, .academic {
+    position: relative;
+}
+
+.prospective a, .academic a {
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    
+}
+
+.prospective li, .academic li {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    left: 2px;
+}
+
+.prospective li:hover, .academic li:hover {
+          background-color: #C9C9C9;
+}
+
+.navBar button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+    
+
+    
+
+    
+     
+
+    
+    
+
+.foot {
+      width: 100%;
+      height: 170px;
+      padding:30px;
+      
+      background-color: black;
+      
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      align-items: center;
+      padding-left: 16vw;
+
+
+}
+
+.footLeft {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      font-size:0.5;
+}
+
+.footRight {
+      grid-column-start: 2;
+      grid-column-end: 2;
+}
+
+    
+button {
+    padding: 0;
+    background: none;
+    border: none;
+    
+
+}
+button:hover {
+    background-color: grey;
+
+}
+
+.content {
+
+   
+    height: 200px;
+    
+
+}
+.sidebar {
+
+    float: left;
+    margin-left: 130px;
+}
+
+table {
+    border-spacing: 10px;
+    margin-top: 30px;
+    
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+tr:hover {
+    background-color: #808080;
+    
+}
+
+.center {
+   
+    margin-left: 50px;
+    float: right;
+    width: 100%;
+}
+
+.p {
+    margin-right: 100px;
+    margin-top: 15px;
+    word-spacing: 4px;
+    margin-left: 340px;
+}
+
+.p a  {
+    text-decoration: none;
+    color: #780000;
+    
+}
+
+.p li {
+
+}
+
+
+
+
+
+
+   
+  </style>
+
+ 
+</head>
+
+<body style="height: 2000px;">
+
+
+  <div class="container" style="width: 100%; padding: 0;">
+
+   
+     
+      <div class="wholeBar">
+
+    <!-- Topmost bar of the webpage -->
+    <div class="topbar">
+
+      <p> <b>McGill University | Université McGill</b> <a href=""
+          style="color: rgb(252, 38, 33); font-size: 15px; float: right; padding-right: 15px;">Login</a></p>
+    </div>
+
+
+
+    <!-- Main, middle bar of the webpage -->
+    <div class="header">
+      <img src="images/img4.png" alt="img4" style="height:9vw; width:8vw; margin: 1.56vw; "><span
+        style="top: 50px; font-size: 3vw; height:400px; max-width:200px;"> Department of <span
+          style="color:rgb(252, 38, 33);">Computer Science</span></span></div>
+    <!-- nav-bar -->
+
+   <div class="navBar">
+        <div class="prospective">
+            <button>Prospective</button>
+            <ul>
+                <li><a href="generalinfo.html">General Info</a></li>
+                <li><a href="whycs.html">Why CS?</a></li>
+                <li><a href="CEGEP.html">CEGEP</a></li>
+                <li><a href="freshman.html">Freshmen</a></li>
+                <li><a href="Major.html">Choosing a Major</a></li>
+                <li><a href="combiningstudies.html">Combining Studies</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="undergrad.html">Undergraduate</a></li>
+                <li><a href="transfers.html">Transfer</a></li>
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Academic</button>
+            <ul style="height: 150px;">
+                <li><a href="Undergraduate.html">Undergraduate</a></li>
+                <li><a href="Graduate.html">Graduate</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="TeachingAssitant.html">Teaching Assistant</a></li>
+                <li><a href="Funding.html">Funding</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Research</button>
+            <ul style="height: 50px;">
+                <li><a href="Areas.html">Areas</a></li>
+                <li><a href="TechReports.html">Tech Reports</a></li>
+               
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>People</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Staff.html">Staff</a></li>
+                <li><a href="Community.html">Community</a></li>
+               
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>News</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>Employment</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Course Lecturer.html">Course Lecturer</a></li>
+                <li><a href="Priority.html">Priority Points</a></li>
+
+
+            </ul>
+
+        </div>
+
+        
+            <div class="prospective">
+            <button>Donate</button>
+            <ul style="height: 30px;">
+                <li><a href="Donate.html">Donate</a></li>
+                
+
+
+            </ul>
+
+        </div>
+           
+
+
+         <div class="prospective">
+            <button>About</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+
+
+      
+    </div>
+
+
+          </div>
+  
+
+    <div class="content">
+          <div class="sidebar">
+                <table>
+                    <tr><td><mark>Prospective</mark></td></tr>
+                    <tr><td><a href="generalinfo.html" style="color: black; text-decoration: none; ">General Info</a></td></tr>
+                    <tr><td><b><a href="#" style="color: black; text-decoration: none;">Why CS?</a></b></td></tr>
+                    <tr><td><a href="CEGEP.html" style="color: black; text-decoration: none;">CEGEP</a></td></tr>
+                    <tr><td><a href="freshman.html" style="color: black; text-decoration: none;">Freshman</a></td></tr>
+                    <tr><td><a href="major.html" style="color: black; text-decoration: none;">Choosing a Major</a></td></tr>
+                    <tr><td><a href="combiningstudies.html" style="color: black; text-decoration: none;">Combining Studies</a></td></tr>
+                    <tr><td><a href="internships.html" style="color: black; text-decoration: none;">Internships</a></td></tr>
+                    <tr><td><a href="undergrad.html" style="color: black; text-decoration: none;">Undergrads</a></td></tr>
+                    <tr><td><a href="transfers.html" style="color: black; text-decoration: none;">Transfers</a></td></tr>
+                </table>
+          </div>
+        
+        <div class="img"><img src="images/image5.png" style="width: 1102px; height: 400px; margin-left: 60px; "/></div>
+
+        <div class="center">
+                <h2 class="p" style="font-weight: lighter; color: #780000;">Why CS?</h2>
+                <h3 class="p" style="font-weight: lighter; color: #780000;">What is Computer Science?</h3>
+                <p class="p">Computer science encompasses everything from theory to applications, including software engineering, programming languages, robotics, compilers, databases, game design and development, operating systems, artificial intelligence, computational biology, computer vision, and the analysis of algorithms.</p>
+
+
+                    <br />
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Studying Computer Science at McGill</h3>
+
+                <p class="p"> You can study Computer Science at McGill in many different ways. One typical way is by completing a Bachelor of Science (B.Sc.) degree program in the <a href="http://www.mcgill.ca/science/">Faculty of Science</a>. You can choose the amount and nature of the computer science courses that you take by selecting different program options. For example, a Major in Computer Science requires you to take 60 credits of computer science or related courses. On the other hand, a Minor in Computer Science requires you to take only 24 credits of computer science or related courses. Most computer science courses are worth 3 or 4 credits.</p>
+                    <br />
+
+                <h3 class="p" style="font-weight: lighter; color: #780000;">The School Of Computer Science</h3>
+
+                <p class="p">The <a href="http://www.cs.mcgill.ca/">School of Computer Science</a> is part of the <a href="http://www.mcgill.ca/science/">Faculty of Science</a>. The School of Computer Science groups 34 faculty members who teach and do research on a wide variety of computer science and software engineering topics. The School of Computer Science is located in the <a href="https://www.cs.mcgill.ca/prospective/whycs/contact/facilities">McConnell Engineering</a> and <a href="https://www.cs.mcgill.ca/prospective/whycs/contact/facilities">Trottier</a> Buildings. Courses at McGill are taught in English. For most upper-level computer science courses, classes are small (about 10-30 students), and students have numerous opportunities for direct interaction with professors, both inside and <a href="https://www.cs.mcgill.ca/research">outside</a> the classroom.</p>
+
+                <br />
+
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Our Undergraduate Programs</h3>
+
+                <p class="p">The School of Computer Scienceoffers several interesting study programs. Our three most popular programs are: </p>
+                    <ul style="margin-left:390px; margin-right: 100px;">
+                        <li>Major in Computer Science, for students interested in a broad study of computer science topics.</li>
+                        <li>Major in Software Engineering, for students interested in problems related to the design, development, and maintenance of software systems.</li>
+                        <li>Minor in Computer Science, for students interested in a computer science complement to another major field of study.</li>
+                    </ul>
+                <p class="p">Other programs that combine the study of computer science with different topics are also offered by other departments in the <a href="http://www.mcgill.ca/science/">Faculty of Science</a> and in the <a href="http://www.mcgill.ca/arts/">Faculty of Arts</a>. For more details, see <a href="https://www.cs.mcgill.ca/academic/undergrad/program">the complete list of programs</a> offered by the School of Computer Science.</p>
+                <p class="p" style="word-spacing: normal;">If you're lost, feel free to <a href="https://www.cs.mcgill.ca/contact/contacts">contact us</a>.</p>
+                <p class="p" style="word-spacing: normal;">McGill computer science students also have access to an <a href="http://www.cs.mcgill.ca/prospective/internships">internship program</a>.</p>
+
+                <br />
+                
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Why You Should Apply?</h3>
+
+                <p class="p">A university-level education in computer science will help you develop your analytical thinking and creative problem solving skills while studying a wealth of exciting topics with a wide range of applications (from medicine to business). An undergraduate education in computer science will also open the door to careers in a variety of companies (engineering, high-tech, pharmaceutical). For those of you who may be thinking about graduate studies, a degree in computer science is an excellent foundation for the study of computer science at the graduate level (M.Sc. or Ph.D.). McGill is a <a href="https://www.cs.mcgill.ca/news/awards">top-ranked and internationally-recognized university</a>, and our graduates typically move on to fulfilling careers or further studies in the top companies or universities.</p>
+
+                   <hr />
+
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Qu'est-ce que l'Informatique?</h3>
+                <p class="p">L'informatique regroupe un grand nombre de sujets d'étude, des plus abstraits au plus appliqués, incluant: le génie logiciel, les langages de programmation, la robotique, les compilateurs, les bases de données, le design et développement de jeux vidéos, les systèmes d'exploitation, l'intelligence artificielle, la bioinformatique, la vision par ordinateur, et l'analyse d'algorithmes.
+
+                </p>
+
+                <br />
+                
+                 <h3 class="p" style="font-weight: lighter; color: #780000;">Étudier l'Informatique à McGill</h3>
+                 <p class="p">On peut étudier l'informatique à McGill en suivant différents cheminements. Un cheminement typique est de compléter le programme de Baccalauréat en Sciences (B.Sc.) offert par la Faculté des Sciences. On peut déterminer le nombre et le type de cours d'informatique à compléter en choisissant un programme. Par exemple, une Majeure en Informatique requiert 60 crédits de cours d'informatique ou de sujets reliés. D'un autre côté, une Mineure en Informatique requiert seulement 24 crédits de cours d'informatique ou de sujets reliés. La plupart des cours d'informatique valent 3 ou 4 crédits.</p>
+                 <br />
+
+                 <h3 class="p" style="font-weight: lighter; color: #780000;">L'École d'Informatique</h3>
+                 <p class="p">L'École d'Informatique (ou School of Computer Science fait partie de la Faculté des Sciences. L'École d'Informatique regroupe 34 professeurs qui enseignent et font de la recherche dans une grande variété de branches de l'informatique et du génie logiciel. L'École d'Informatique est située dans les pavillons McConnell Engineering et Trottier. Les cours à McGill sont donnés en anglais, mais plusieurs professeurs parlent le français. La plupart des cours de deuxième et troisième année ont un petit nombre d'étudiants (environ 10-30), et les étudiants ont plusieurs opportunités d'interaction avec les professeurs, à la fois à l'intérieur et à l'extérieur des salles de cours.
+
+</p>
+
+
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Nos Programmes de Bacc</h3>
+
+                <p class="p">L'École d'Informatique offre plusieurs programmes d'étude intéressants. Nos trois programmes les plus populaires sont:</p>
+                    <ul style="margin-left:390px; margin-right: 100px;">
+                        <li>Major in Computer Science, pour les étudiants intéressés à une étude poussée de l'informatique.</li>
+                        <li>Major in Software Engineering, pour les étudiants intéressés à l'étude des problèmes reliés au design, au développement, et à la maintenance des systèmes logiciels.</li>
+                        <li>Minor in Computer Science, pour les étudiants intéressés à l'informatique comme un complément à l'étude d'un autre programme majeur d'étude.</li>
+                    </ul>
+                <p class="p">D'autres programmes combinant l'étude de l'informatique avec d'autres sujets sont aussi offerts (Maîtrise ou Doctorat). McGill est aussi une université de niveau supérieur et mondialement reconnue, et nos gradués progressent typiquement vers des carrières ou des études dans les meilleures entreprises ou universités.</p>
+                
+
+                <br />
+                
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Pourquoi Appliquer</h3>
+
+                <p class="p">Une formation universitaire en informatique ou en génie logiciel aident à développer des aptitudes de raisonnement analytique et de solution de problèmes tout en étudiant une multitude de sujets motivants et aux applications multiples (de la médecine à la finance). Une formation universitaire en informatique offre aussi des possibilités de carrière dans plusieurs types d'entreprises (génie, hautes-technologies, pharmaceutique). Pour ceux et celles qui songent aux études supérieures, un Bacc en informatique à McGill procure une excellente base pour l'étude de l'informatique aux cycles supérieurs (Maîtrise ou Doctorat). McGill est aussi une université de niveau supérieur et mondialement reconnue, et nos gradués progressent typiquement vers des carrières ou des études dans les meilleures entreprises ou universités.</p>
+
+
+        </div>
+
+    </div>
+     
+
+    
+    
+
+
+    </div>
+     <div class="foot">
+        <div class="footLeft">
+      <p>© McGill University 2020 Credits</p>
+      All content related requests should be sent to<a href ="webadmin@cs.mcgill.ca"> webadmin at cs dot mcgill dot ca</a>
+    </div>
+         <div class="footRight">
+      <img src="images/mcgill cs logo.png" alt="mcgill cs logo" style="width:60%; height: 100px; margin-left: 60px;">
+    </div>
+      
+      </div>
+
+</body>
+
+</html>

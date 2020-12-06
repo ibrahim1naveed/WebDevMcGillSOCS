@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+.wholeBar {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 250px;
+      position: relative;
+      top: 1px;
+      width: 100%;
+      background-image: url(images/image10.jpg);
+      background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    background-size: cover;
+    
+    
+      
+
+    }
+
+    .topbar {
+      position: absolute;
+      height: .018vw;
+      width: 100vw;
+      min-height: 15px;
+      font-size: clamp(10, 3vw, 13px);
+      padding-top: 5px;
+      padding-left: 16vw;
+      padding-right: 300px;
+      padding-bottom: 0.4vh;
+    }
+
+    div.topbar p {
+      color: black;
+      font-size: clamp(8px, 1.5rem, 20px);
+      width: 100%;
+    }
+
+    .header {
+      padding-top: 30px;
+      margin-bottom: 0px;
+      color: black;
+      padding-left: 16vw;
+      background: rgba(255, 255, 255, 0.5);
+      height: fit-content;
+    }
+
+    div.header p {
+      color: black;
+      font-size: clamp(20px, 1.5rem, 50px);
+      width: inherit;
+    }
+
+    div.header img {
+      opacity: 1;
+      min-width: 50px;
+      min-height: 75px;
+    }
+
+  
+
+    .navBar {
+      background: rgba(255, 255, 255, 0.5);
+      height: 40px;
+      color: black;
+      margin-top: 0px;
+      width: 100%;
+      height: 50px;
+      justify-content: space-evenly;
+      padding-left: 22vw;
+      display: flex;
+
+    }
+
+.navBar button {
+      background: rgba(243, 240, 240, 0);
+      height: 4vh;
+      width: fit-content;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-right: 4%;
+      border: none;
+      cursor: pointer;
+}
+
+.prospective ul, .academic ul {
+    position: absolute;
+    left: 0px;
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+    opacity: 0;
+    
+    transition: all 0.4s ease;
+    transform: translateY(10px);
+    
+    
+}
+
+.prospective, .academic {
+    position: relative;
+}
+
+.prospective a, .academic a {
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    
+}
+
+.prospective li, .academic li {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    left: 2px;
+}
+
+.prospective li:hover, .academic li:hover {
+          background-color: #C9C9C9;
+}
+
+.navBar button:focus + ul {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+    
+
+    
+
+    
+     
+
+    
+    
+
+.foot {
+      width: 100%;
+      height: 170px;
+      padding:30px;
+      
+      background-color: black;
+      
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      align-items: center;
+      padding-left: 16vw;
+
+
+}
+
+.footLeft {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      font-size:0.5;
+}
+
+.footRight {
+      grid-column-start: 2;
+      grid-column-end: 2;
+}
+
+    
+button {
+    padding: 0;
+    background: none;
+    border: none;
+    
+
+}
+button:hover {
+    background-color: grey;
+
+}
+
+.content {
+
+   
+    height: 200px;
+    
+
+}
+.sidebar {
+
+    float: left;
+    margin-left: 130px;
+}
+
+table {
+    border-spacing: 10px;
+    margin-top: 30px;
+    
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+tr:hover {
+    background-color: #808080;
+    
+}
+
+.center {
+   
+    margin-left: 50px;
+    float: right;
+    width: 100%;
+}
+
+.p {
+    margin-right: 100px;
+    margin-top: 15px;
+    word-spacing: 4px;
+    margin-left: 340px;
+}
+
+.p a  {
+    text-decoration: none;
+    color: #780000;
+    
+}
+
+.p li {
+
+}
+
+
+
+
+
+
+   
+  </style>
+
+ 
+</head>
+
+<body style="height: 1900px;">
+
+
+  <div class="container" style="width: 100%; padding: 0;">
+
+   
+     
+      <div class="wholeBar">
+
+    <!-- Topmost bar of the webpage -->
+    <div class="topbar">
+
+      <p> <b>McGill University | Université McGill</b> <a href=""
+          style="color: rgb(252, 38, 33); font-size: 15px; float: right; padding-right: 15px;">Login</a></p>
+    </div>
+
+
+
+    <!-- Main, middle bar of the webpage -->
+    <div class="header">
+      <img src="images/img4.png" alt="img4" style="height:9vw; width:8vw; margin: 1.56vw; "><span
+        style="top: 50px; font-size: 3vw; height:400px; max-width:200px;"> Department of <span
+          style="color:rgb(252, 38, 33);">Computer Science</span></span></div>
+    <!-- nav-bar -->
+
+    <div class="navBar">
+        <div class="prospective">
+            <button>Prospective</button>
+            <ul>
+                <li><a href="generalinfo.html">General Info</a></li>
+                <li><a href="whycs.html">Why CS?</a></li>
+                <li><a href="CEGEP.html">CEGEP</a></li>
+                <li><a href="freshman.html">Freshmen</a></li>
+                <li><a href="Major.html">Choosing a Major</a></li>
+                <li><a href="combiningstudies.html">Combining Studies</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="undergrad.html">Undergraduate</a></li>
+                <li><a href="transfers.html">Transfer</a></li>
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Academic</button>
+            <ul style="height: 150px;">
+                <li><a href="Undergraduate.html">Undergraduate</a></li>
+                <li><a href="Graduate.html">Graduate</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="TeachingAssitant.html">Teaching Assistant</a></li>
+                <li><a href="Funding.html">Funding</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Research</button>
+            <ul style="height: 50px;">
+                <li><a href="Areas.html">Areas</a></li>
+                <li><a href="TechReports.html">Tech Reports</a></li>
+               
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>People</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Staff.html">Staff</a></li>
+                <li><a href="Community.html">Community</a></li>
+               
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>News</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>Employment</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Course Lecturer.html">Course Lecturer</a></li>
+                <li><a href="Priority.html">Priority Points</a></li>
+
+
+            </ul>
+
+        </div>
+
+        
+            <div class="prospective">
+            <button>Donate</button>
+            <ul style="height: 30px;">
+                <li><a href="Donate.html">Donate</a></li>
+                
+
+
+            </ul>
+
+        </div>
+           
+
+
+         <div class="prospective">
+            <button>About</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+
+
+      
+    </div>
+
+
+          </div>
+  
+
+    <div class="content">
+          <div class="sidebar">
+                <table>
+                    <tr><td><mark>Prospective</mark></td></tr>
+                    <tr><td><a href="generalinfo.html" style="color: black; text-decoration: none; ">General Info</a></td></tr>
+                    <tr><td><a href="whycs.html" style="color: black; text-decoration: none;">Why CS?</a></td></tr>
+                    <tr><td><b><a href="#" style="color: black; text-decoration: none;">CEGEP</a></b></td></tr>
+                    <tr><td><a href="freshman.html" style="color: black; text-decoration: none;">Freshman</a></td></tr>
+                    <tr><td><a href="major.html" style="color: black; text-decoration: none;">Choosing a Major</a></td></tr>
+                    <tr><td><a href="combiningstudies.html" style="color: black; text-decoration: none;">Combining Studies</a></td></tr>
+                    <tr><td><a href="internships.html" style="color: black; text-decoration: none;">Internships</a></td></tr>
+                    <tr><td><a href="undergrad.html" style="color: black; text-decoration: none;">Undergrads</a></td></tr>
+                    <tr><td><a href="transfers.html" style="color: black; text-decoration: none;">Transfers</a></td></tr>
+                </table>
+          </div>
+        
+        <div class="img"><img src="images/image6.jpg" style="width: 1102px; height: 400px; margin-left: 60px; "/></div>
+
+        <div class="center">
+                <h2 class="p" style="font-weight: lighter; color: #780000;">CEGEP</h2>
+                <h3 class="p" style="font-weight: lighter; color: #780000;">What You Need To Apply?</h3>
+                <p class="p">If you are completing a science pre-university CEGEP program, you should apply to the B.Sc. programs offered through the Faculty of Science. To be eligible to enter the program of your choice you will need your DEC and to have completed the following CEGEP-level courses: Biology - NYA (00UK); Chemistry - NYA, NYB (00UL, 00UM); Mathematics - NYA, NYB, NYC (00UN, 00UP, 00UQ); Physics - NYA, NYB, NYC (00UR, 00US, 00UT). If this is your case, you should apply though the <a href="http://www.mcgill.ca/science">Faculty of Science</a></p>
+                <p class="p"><b>If you are graduating from the new Math and Computer Science CEGEP program</b>, you should also apply though the Faculty of Science, and select the BSc in the Physical, Earth, Mathematics and Computer Science Group. You will then be able to proceed directly to a major in CS or SE and will not have to complete any extra science courses at McGill.</p>
+                <p class="p">If you have a different background that includes some mathematics, you can still enter B.A. programs in Computer Science. In this case you should apply to the <a href="http://www.mcgill.ca/arts/">Faculty of Arts</a>.</p>
+                <p class="p">See the <a href="http://www.mcgill.ca/applying/admissionsguide/quebec/">official McGill page for CEGEP students</a>.</p>
+                <p class="p">Note that you do not need to have prior experience with computer science to apply to our programs: you can start with our introductory programming course, COMP 202, Introduction to Computing I. However, if you have already completed a course in programming, you may be able to start your McGill program directly with the course COMP 250 Introduction to Computer Science</p>
+
+                    <br />
+                <h3 class="p" style="font-weight: lighter; color: #780000;">How You Apply</h3>
+
+                <p class="p">For general information on admission, fees, etc., see the <a href="http://www.mcgill.ca/applying/">McGill admissions web site</a>. To apply on-line, select "Applying On-line".</p>
+                <p class="p">You will be asked to create an account, enter your personal information, etc. Once you reach the page asking your about Program Choice:</p>
+
+                <p class="p"><b>For students with a science DEC:</b></p>
+                <ul style="margin-left:390px; margin-right: 100px;">
+                    <lis>For "Faculty/School/Center", choose "Faculty of Science"</lis>
+                    <li>For "Program", choose "B Sc Physical, Earth, Math & Computer Sci" for all Computer Science or Software Engineering Majors, except for the Joint Computer Science and Biology Major. If you are specifically interested in the the Joint Computer Science and Biology Major, then choose "B Sc Biological, Biomedical & Life Sci"</li>
+                    <li>For "Major or Subject", choose one of "Computer Science", "Math & Computer Science", "Physics & Computer Science", "Stats & Computer Science", "Software Engineering" or "Computer Science and Biology".
+                    </li>
+                </ul>
+
+                <p class="p">If you decide later you prefer a different major, do not worry as you can declare a different major from within the same group at the time of registration.</p>
+
+
+
+
+
+                <p class="p"><b>For students with a non-science DEC and with reasonable background in mathematics</b></p>
+                <ul style="margin-left:390px; margin-right: 100px;">
+                    <li>For "Faculty/School/Center", choose "Faculty of Arts";</li>
+                    <li>For "Program", choose "B Arts";</li>
+                    <li>For "Major or Subject", choose "Undeclared"</li>
+                </ul>
+
+                <p class="p">Students in the Faculty of Arts only declare their major and minor concentrations at the time of registration. Students interested in Computer Science will select a major concentration called "Computer Science" and they may also add to that another minor concentration called "Supplementary Minor Concentration in Computer Science". This combination is actually very similar to the B.Sc. major in Computer Science.</p>
+
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Contact Us</h3>
+                <p class="p"><b>Liette Chin</b>, Undergraduate Program Coordinator <br /> Office: McConnell 320, Phone: 398-7071. ext 00118, Email: liette AT cs.mcgill.ca</p>
+
+                <p class="p"> <b>Adina Puica</b>, Undergraduate Secretary<br /> Office: McConnell 320, Phone: 398-7071. ext 00739, Email: adina.puica AT mcgill.ca</p>
+
+        </div>
+
+    </div>
+     
+
+    
+    
+
+
+    </div>
+     <div class="foot">
+        <div class="footLeft">
+      <p>© McGill University 2020 Credits</p>
+      All content related requests should be sent to<a href ="webadmin@cs.mcgill.ca"> webadmin at cs dot mcgill dot ca</a>
+    </div>
+         <div class="footRight">
+      <img src="images/mcgill cs logo.png" alt="mcgill cs logo" style="width:60%; height: 100px; margin-left: 60px;">
+    </div>
+      
+      </div>
+
+</body>
+
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    
+    
+    
+        
+}
+
+
+
+.wholeBar {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 250px;
+      position: relative;
+      top: 1px;
+      width: 100%;
+      background-image: url(images/image10.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+    
+    
+      background-size: cover;
+    
+    
+      
+
+    }
+
+    .topbar {
+      position: absolute;
+      height: .018vw;
+      width: 100vw;
+      min-height: 15px;
+      font-size: clamp(10, 3vw, 13px);
+      padding-top: 5px;
+      padding-left: 16vw;
+      padding-right: 300px;
+      padding-bottom: 0.4vh;
+    }
+
+    div.topbar p {
+      color: black;
+      font-size: clamp(8px, 1.5rem, 20px);
+      width: 100%;
+    }
+
+    .header {
+      padding-top: 30px;
+      margin-bottom: 0px;
+      color: black;
+      padding-left: 16vw;
+      background: rgba(255, 255, 255, 0.5);
+      height: fit-content;
+    }
+
+    div.header p {
+      color: black;
+      font-size: clamp(20px, 1.5rem, 50px);
+      width: inherit;
+    }
+
+    div.header img {
+      opacity: 1;
+      min-width: 50px;
+      min-height: 75px;
+    }
+
+  
+
+    .navBar {
+      background: rgba(255, 255, 255, 0.5);
+      height: 40px;
+      color: black;
+      margin-top: 0px;
+      width: 100%;
+      height: 50px;
+      justify-content: space-evenly;
+      padding-left: 22vw;
+      display: flex;
+      
+      
+
+    }
+
+.navBar button {
+      background: rgba(243, 240, 240, 0);
+      height: 4vh;
+      width: fit-content;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-right: 4%;
+      border: none;
+      cursor: pointer;
+     
+}
+
+.prospective ul, .academic ul {
+    position: absolute;
+    left: 0px;
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+    opacity: 0;
+   
+    
+    transition: all 0.4s ease;
+    transform: translateY(10px);
+    
+    
+}
+
+.prospective, .academic {
+    position: relative;
+}
+
+.prospective a, .academic a {
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    
+}
+
+.prospective li, .academic li {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    left: 2px;
+}
+
+.prospective li:hover, .academic li:hover {
+          background-color: #C9C9C9;
+}
+
+.navBar button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+    
+
+    
+
+    
+     
+
+    
+    
+
+.foot {
+      width: 100%;
+      height: 170px;
+      padding:30px;
+      
+      background-color: black;
+      
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      align-items: center;
+      padding-left: 16vw;
+
+
+}
+
+.footLeft {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      font-size:0.5;
+}
+
+.footRight {
+      grid-column-start: 2;
+      grid-column-end: 2;
+}
+
+    
+button {
+    padding: 0;
+    background: none;
+    border: none;
+    
+
+}
+button:hover {
+    background-color: grey;
+
+}
+
+.content {
+
+   
+    height: 200px;
+    
+
+}
+.sidebar {
+
+    float: left;
+    margin-left: 130px;
+}
+
+table {
+    border-spacing: 10px;
+    margin-top: 30px;
+    
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+tr:hover {
+    background-color: #808080;
+    
+}
+
+.center {
+   
+    margin-left: 50px;
+    float: right;
+    width: 100%;
+}
+
+.p {
+    margin-right: 100px;
+    margin-top: 15px;
+    word-spacing: 5px;
+    margin-left: 340px;
+}
+
+.p a  {
+    text-decoration: none;
+    color: #780000;
+    
+}
+
+
+
+
+
+
+   
+  </style>
+
+ 
+</head>
+
+<body style="height: 2000px;">
+
+
+  <div class="container" style="width: 100%; padding: 0;">
+
+   
+     
+      <div class="wholeBar">
+
+    <!-- Topmost bar of the webpage -->
+    <div class="topbar">
+
+      <p> <b>McGill University | Université McGill</b> <a href=""
+          style="color: rgb(252, 38, 33); font-size: 15px; float: right; padding-right: 15px;">Login</a></p>
+    </div>
+
+
+
+    <!-- Main, middle bar of the webpage -->
+    <div class="header">
+      <img src="images/img4.png" alt="img4" style="height:9vw; width:8vw; margin: 1.56vw; "><span
+        style="top: 50px; font-size: 3vw; height:400px; max-width:200px;"> Department of <span
+          style="color:rgb(252, 38, 33);">Computer Science</span></span></div>
+    <!-- nav-bar -->
+
+   <div class="navBar">
+        <div class="prospective">
+            <button>Prospective</button>
+            <ul>
+                <li><a href="generalinfo.html">General Info</a></li>
+                <li><a href="whycs.html">Why CS?</a></li>
+                <li><a href="CEGEP.html">CEGEP</a></li>
+                <li><a href="freshman.html">Freshmen</a></li>
+                <li><a href="Major.html">Choosing a Major</a></li>
+                <li><a href="combiningstudies.html">Combining Studies</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="undergrad.html">Undergraduate</a></li>
+                <li><a href="transfers.html">Transfer</a></li>
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Academic</button>
+            <ul style="height: 150px;">
+                <li><a href="Undergraduate.html">Undergraduate</a></li>
+                <li><a href="Graduate.html">Graduate</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="TeachingAssitant.html">Teaching Assistant</a></li>
+                <li><a href="Funding.html">Funding</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Research</button>
+            <ul style="height: 50px;">
+                <li><a href="Areas.html">Areas</a></li>
+                <li><a href="TechReports.html">Tech Reports</a></li>
+               
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>People</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Staff.html">Staff</a></li>
+                <li><a href="Community.html">Community</a></li>
+               
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>News</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>Employment</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Course Lecturer.html">Course Lecturer</a></li>
+                <li><a href="Priority.html">Priority Points</a></li>
+
+
+            </ul>
+
+        </div>
+
+        
+            <div class="prospective">
+            <button>Donate</button>
+            <ul style="height: 30px;">
+                <li><a href="Donate.html">Donate</a></li>
+                
+
+
+            </ul>
+
+        </div>
+           
+
+
+         <div class="prospective">
+            <button>About</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+
+
+      
+    </div>
+
+
+          </div>
+  
+
+    <div class="content">
+          <div class="sidebar">
+                <table>
+                    <tr><td><mark>Prospective</mark></td></tr>
+                    <tr><td><b><a href="#" style="color: black; text-decoration: none; ">General Info</a></b></td></tr>
+                    <tr><td><a href="whycs.html" style="color: black; text-decoration: none;">Why CS?</a></td></tr>
+                    <tr><td><a href="CEGEP.html" style="color: black; text-decoration: none;">CEGEP</a></td></tr>
+                    <tr><td><a href="freshman.html" style="color: black; text-decoration: none;">Freshman</a></td></tr>
+                    <tr><td><a href="major.html" style="color: black; text-decoration: none;">Choosing a Major</a></td></tr>
+                    <tr><td><a href="combiningstudies.html" style="color: black; text-decoration: none;">Combining Studies</a></td></tr>
+                    <tr><td><a href="internships.html" style="color: black; text-decoration: none;">Internships</a></td></tr>
+                    <tr><td><a href="undergrad.html" style="color: black; text-decoration: none;">Undergrads</a></td></tr>
+                    <tr><td><a href="transfers.html" style="color: black; text-decoration: none;">Transfers</a></td></tr>
+                </table>
+          </div>
+        
+        <div class="img"><img src="images/image3.png" style="width: 1102px; height: 400px; margin-left: 60px; "/></div>
+
+        <div class="center">
+                <p class="p"><a href="http://www.mcgill.ca/">McGill University</a> is one of the top research universities in Canada and is the only Canadian university to rank consistently among the top 25 universities in the world (based on <a href="http://www.mcgill.ca/about/points-pride">Times and QS rankings)</a>. The School of Computer Science currently stands second in Canada for its research funding. Our professors have received most of the <a href="https://www.cs.mcgill.ca/news/award">top awards in Computer Science</a>, while our students go on to become top-notch research and industry leaders. A graduate degree from the McGill School of Computer Science is recognized in both the academic and industrial worlds as a proof of excellence.</p>
+
+                <p class="p">Our department is currently 34 <a href="https://www.cs.mcgill.ca/people/faculty">faculty members</a> strong, 60 Ph.D. students, and 100 Masters students. All of our Ph.D. students and most of our Masters students are funded through teaching assistantships or research assistantships. Approximately half our graduate students are Canadian and the other half are from abroad.</p>
+                    <br />
+                <h2 class="p" style="font-weight: lighter; color: #780000;">Location</h2>
+
+                <p class="p">McGill is an English language university located in the heart of Montreal, the second largest French-speaking city in the world. Montreal has a reputation for its cosmopolitan atmosphere, history, cultural and sport activities, and excellent restaurants. The cultural offerings of the city include a symphony orchestra, ballet, opera, several theaters and museums. For outdoor recreation, Mount Royal, a wooded mountain with a lake and parks located very close to the university, along with the St. Lawrence river, the many lakes and parks around the island of Montreal, provide opportunity for a wide variety of activities. Montreal consistently ranks among the most livable cities in the world, and the cost of living is among the lowest for cities of its size. The city is extremely safe and has an excellent public transportation system. Note that although speaking French is useful to fully enjoy your experience in Montreal, it is by no means necessary, as English is also spoken fluently by most of the population. More information can be found on the <a href="http://www.mcgill.ca/prospective/">McGill Prospective Students web page</a>, while information on Montreal is available from <a href="http://www.montrealinternational.com/en/vivre/index.aspx">Montreal International</a>.</p>
+                    <br />
+                <h2 class="p" style="font-weight: lighter; color: #780000;">The Academic Year </h2>
+
+                <p class="p">The academic year at McGill, as at most Canadian universities, has two terms (or semesters). These are the Fall term - early September to early December - and the Winter term - early January to mid-April.There is also a Summer term, although no graduate courses are offered during this session. It is used by students as a time for research or completing projects or theses.</p>
+                    <br />
+                <h2 class="p" style="font-weight: lighter; color: #780000;">Important Information for Foreign Students</h2>
+
+                <p class="p">All students who are not citizens or permanent residents of Canada are required to obtain the necessary Visa and/or Student Authorization documents prior to entering the country. Do NOT leave home without proper documentation! You CANNOT change your status from Visitor to Student when in Canada.</p>
+                   
+                <p class="p"><b>Student Authorization:</b> Issued by Canada Immigration through a Canadian Embassy or Consulate. There is a processing fee of $125 on all applications for Student Authorizations. LINK</p>
+                   
+                <p class="p"><b>Certificate of Acceptance (CAQ)</b>: Issued by Quebec Immigration for a fee of $100. If there is no Quebec Immigration office in the country in which you are applying, you must fill out the application for a CAQ and send it to the Quebec Immigration Office in Montreal along with the $100 processing fee. Once CAQ is approved, Quebec Immigration will telex the Canadian Embassy you are dealing with. If there is a Quebec Immigration office in the country in which you are applying, you apply for the CAQ through them.</p>
+               
+                <p class="p"><b>Health Insurance (Compulsory):</b> Quebec requires all international students to participate in a recognized Health Insurance Plan. Cost is approximately $500 per year for a single person. Most students use one of the insurance plans offered by McGill.</p>
+                   
+                <p class="p">
+                    Once accepted, all international students receive detailed instructions on immigration procedures. These instructions should be read very carefully to avoid unnecessary delays. Applicants are advised to begin procedures necessary to ensure admission to Canada and complete required medical papers for Canadian Immicolor"</p>
+                    <br />
+
+                <h2 class="p" style="font-weight: lighter; color: #780000;">Student Accomodation</h2>
+                <p class="p">Off-campus housing is the most popular among McGill graduate students, as it is usually affordable, convenient, and easy to find. <a href="http://www.mcgill.ca/offcampus/">The Off-Campus Housing Service</a> keeps a computerized list of available housing within walking distance of McGill, or easily accessible by metro and bus lines. Most listings are checked to ensure minimum standards of cleanliness and state of repair. Rental rates vary according to accommodation desired, but are considered very reasonable in comparison with most North American cities. The University maintains a limited number of apartment units in several nearby locations. Housing request forms can be obtained from the Graduate Housing office.</p>
+
+            </div>
+
+    </div>
+     
+
+    
+    
+
+
+    </div>
+     <div class="foot">
+        <div class="footLeft">
+      <p>© McGill University 2020 Credits</p>
+      All content related requests should be sent to<a href ="webadmin@cs.mcgill.ca"> webadmin at cs dot mcgill dot ca</a>
+    </div>
+         <div class="footRight">
+      <img src="images/mcgill cs logo.png" alt="mcgill cs logo" style="width:60%; height: 100px; margin-left: 60px;">
+    </div>
+      
+      </div>
+
+</body>
+
+</html>

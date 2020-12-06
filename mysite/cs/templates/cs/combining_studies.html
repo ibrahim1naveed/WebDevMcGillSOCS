@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+.wholeBar {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 250px;
+      position: relative;
+      top: 1px;
+      width: 100%;
+      background-image: url(images/image10.jpg);
+      background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    background-size: cover;
+    
+    
+      
+
+    }
+
+    .topbar {
+      position: absolute;
+      height: .018vw;
+      width: 100vw;
+      min-height: 15px;
+      font-size: clamp(10, 3vw, 13px);
+      padding-top: 5px;
+      padding-left: 16vw;
+      padding-right: 300px;
+      padding-bottom: 0.4vh;
+    }
+
+    div.topbar p {
+      color: black;
+      font-size: clamp(8px, 1.5rem, 20px);
+      width: 100%;
+    }
+
+    .header {
+      padding-top: 30px;
+      margin-bottom: 0px;
+      color: black;
+      padding-left: 16vw;
+      background: rgba(255, 255, 255, 0.5);
+      height: fit-content;
+    }
+
+    div.header p {
+      color: black;
+      font-size: clamp(20px, 1.5rem, 50px);
+      width: inherit;
+    }
+
+    div.header img {
+      opacity: 1;
+      min-width: 50px;
+      min-height: 75px;
+    }
+
+  
+
+    .navBar {
+      background: rgba(255, 255, 255, 0.5);
+      height: 40px;
+      color: black;
+      margin-top: 0px;
+      width: 100%;
+      height: 50px;
+      justify-content: space-evenly;
+      padding-left: 22vw;
+      display: flex;
+
+    }
+
+.navBar button {
+      background: rgba(243, 240, 240, 0);
+      height: 4vh;
+      width: fit-content;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-right: 4%;
+      border: none;
+      cursor: pointer;
+}
+
+.prospective ul, .academic ul {
+    position: absolute;
+    left: 0px;
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+    opacity: 0;
+    
+    transition: all 0.4s ease;
+    transform: translateY(10px);
+    
+    
+}
+
+.prospective, .academic {
+    position: relative;
+}
+
+.prospective a, .academic a {
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    
+}
+
+.prospective li, .academic li {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    left: 2px;
+}
+
+.prospective li:hover, .academic li:hover {
+          background-color: #C9C9C9;
+}
+
+.navBar button:focus + ul {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+    
+
+    
+
+    
+     
+
+    
+    
+
+.foot {
+      width: 100%;
+      height: 170px;
+      padding:30px;
+      
+      background-color: black;
+      
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      align-items: center;
+      padding-left: 16vw;
+
+
+}
+
+.footLeft {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      font-size:0.5;
+}
+
+.footRight {
+      grid-column-start: 2;
+      grid-column-end: 2;
+}
+
+    
+button {
+    padding: 0;
+    background: none;
+    border: none;
+    
+
+}
+button:hover {
+    background-color: grey;
+
+}
+
+.content {
+
+   
+    height: 200px;
+    
+
+}
+.sidebar {
+
+    float: left;
+    margin-left: 130px;
+}
+
+table {
+    border-spacing: 10px;
+    margin-top: 30px;
+    
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+tr:hover {
+    background-color: #808080;
+    
+}
+
+.center {
+   
+    margin-left: 50px;
+    float: right;
+    width: 100%;
+}
+
+.p {
+    margin-right: 100px;
+    margin-top: 15px;
+    word-spacing: 4px;
+    margin-left: 340px;
+}
+
+.p a  {
+    text-decoration: none;
+    color: #780000;
+    
+}
+
+.p li {
+
+}
+
+
+
+
+
+
+   
+  </style>
+
+ 
+</head>
+
+<body style="height: 2000px;">
+
+
+  <div class="container" style="width: 100%; padding: 0;">
+
+   
+     
+      <div class="wholeBar">
+
+    <!-- Topmost bar of the webpage -->
+    <div class="topbar">
+
+      <p> <b>McGill University | Université McGill</b> <a href=""
+          style="color: rgb(252, 38, 33); font-size: 15px; float: right; padding-right: 15px;">Login</a></p>
+    </div>
+
+
+
+    <!-- Main, middle bar of the webpage -->
+    <div class="header">
+      <img src="images/img4.png" alt="img4" style="height:9vw; width:8vw; margin: 1.56vw; "><span
+        style="top: 50px; font-size: 3vw; height:400px; max-width:200px;"> Department of <span
+          style="color:rgb(252, 38, 33);">Computer Science</span></span></div>
+    <!-- nav-bar -->
+
+    <div class="navBar">
+        <div class="prospective">
+            <button>Prospective</button>
+            <ul>
+                <li><a href="generalinfo.html">General Info</a></li>
+                <li><a href="whycs.html">Why CS?</a></li>
+                <li><a href="CEGEP.html">CEGEP</a></li>
+                <li><a href="freshman.html">Freshmen</a></li>
+                <li><a href="Major.html">Choosing a Major</a></li>
+                <li><a href="combiningstudies.html">Combining Studies</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="undergrad.html">Undergraduate</a></li>
+                <li><a href="transfers.html">Transfer</a></li>
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Academic</button>
+            <ul style="height: 150px;">
+                <li><a href="Undergraduate.html">Undergraduate</a></li>
+                <li><a href="Graduate.html">Graduate</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="TeachingAssitant.html">Teaching Assistant</a></li>
+                <li><a href="Funding.html">Funding</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Research</button>
+            <ul style="height: 50px;">
+                <li><a href="Areas.html">Areas</a></li>
+                <li><a href="TechReports.html">Tech Reports</a></li>
+               
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>People</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Staff.html">Staff</a></li>
+                <li><a href="Community.html">Community</a></li>
+               
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>News</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>Employment</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Course Lecturer.html">Course Lecturer</a></li>
+                <li><a href="Priority.html">Priority Points</a></li>
+
+
+            </ul>
+
+        </div>
+
+        
+            <div class="prospective">
+            <button>Donate</button>
+            <ul style="height: 30px;">
+                <li><a href="Donate.html">Donate</a></li>
+                
+
+
+            </ul>
+
+        </div>
+           
+
+
+         <div class="prospective">
+            <button>About</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+
+
+      
+    </div>
+
+
+          </div>
+  
+
+    <div class="content">
+          <div class="sidebar">
+                <table>
+                    <tr><td><mark>Prospective</mark></td></tr>
+                    <tr><td><a href="generalinfo.html" style="color: black; text-decoration: none; ">General Info</a></td></tr>
+                    <tr><td><a href="whycs.html" style="color: black; text-decoration: none;">Why CS?</a></td></tr>
+                    <tr><td><a href="CEGEP.html" style="color: black; text-decoration: none;">CEGEP</a></td></tr>
+                    <tr><td><a href="freshman.html" style="color: black; text-decoration: none;">Freshman</a></td></tr>
+                    <tr><td><a href="major.html" style="color: black; text-decoration: none;">Choosing a Major</a></td></tr>
+                    <tr><td><b><a href="#" style="color: black; text-decoration: none;">Combining Studies</a></b></td></tr>
+                    <tr><td><a href="internships.html" style="color: black; text-decoration: none;">Internships</a></td></tr>
+                    <tr><td><a href="undergrad.html" style="color: black; text-decoration: none;">Undergrads</a></td></tr>
+                    <tr><td><a href="transfers.html" style="color: black; text-decoration: none;">Transfers</a></td></tr>
+                </table>
+          </div>
+        
+        <div class="img"><img src="images/img11.jpg" style="width: 1087px; height: 400px; margin-left: 60px; "/></div>
+
+        <div class="center">
+                <h2 class="p" style="font-weight: lighter; color: #780000;">Computer Science and Other Studies</h2>
+                
+                <p class="p">For many students, combining computer science with another discipline is a great way to explore a wider range of options. This page describes your choices. Links to the detailed programs can be found here.</p>
+
+                
+                    <br />
+                <h3 class="p" style="font-weight: lighter; color: #780000;">B.Sc. Liberal Program</h3>
+
+                <p class="p">Starting in Fall 2007 McGill introduced a brand new kind of B.Sc. program that allows you to combine a Core Science Component (CSC) (45 credits) of Computer Science or Software Engineering with a Breadth Component (at least 18 credits) of another discipline. This is a great option for students who wish to learn about the core part of Computer Science, but who also want some breadth, including Arts, Management or other Sciences.</p>
+
+                <p class="p">The B.Sc. Liberal program lets you create your own combination. Here are just some examples:</p>
+
+                <ul style="margin-left:390px; margin-right: 100px;">
+                    <li>You might be interested in leaving the option open for future studies in Medicine, Dentistry or other health-related fields. There is a brand new minor program, the Interdisciplinary Life Sciences Minor, which is a great choice. By combining the core of Computer Science or Software Engineering with the Interdisciplinary Life Sciences minor you can prepare for many diverse career options.</li>
+                    <li> You might also be interested in Arts, so you could combine your CSC in Computer Science with an Arts minor or major concentration. There are a large number of options in Arts from minors like Social Sciences of Medicine to Philosophy and Anthropology.</li>
+                    <li>You might be interested in applying your Computer Science knowledge to management, so you could combine your CSC in Computer Science with a minor in management, finance, marketing or technological entrepreneurship.</li>
+                    <li>You might be interested in applying Computer Science to another Science discipline by completing a minor in Biology, Chemistry, Physics, Psychology, Geography, and so much more.</li>
+                    <li>You also have to option of creating your own breadth component - they key point is to select 18 credits of Science courses that include enough courses outside of your area and enough courses at the 300-level or above. The exact rules for this option will be given in a new "General Science Minor".</li>
+                    <li>You might also decide that you prefer to concentrate in another area and choose a CSC in another Science and then use a Minor in Computer Science as your breadth requirement. The choice is yours.</li>
+
+
+                </ul>
+
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Joint Major (or Honours) in Computer Science and Biology</h3>
+
+                
+                <p class="p">With the advent of new biotechnologies, biology is becoming more and more of a quantitative science, with a clear need for advanced mathematical and computational approaches to design experiments, and manage, store, analyze, and integrate their results. This new joint program will give you an in-depth understanding of biology, computer science, and how the two are irrevocably intertwined. This new breed of multidisciplinary scientists will be highly sought after on the job market as well as in graduate programs. Students interested in this joint major should apply to the Bio-Physical-Computational Sciences Group. All other Computer Science programs are in the Physical, Earth, Math and Computer Sciences Group.</p>
+
+
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Joint Major (or Honours) in Mathematics and Computer Science</h3>
+                <p class="p">Computer science and mathematics are a natural fit. In fact, many of the early pioneers of computer science, such as Alan Turing and John von Neumann, were mathematicians themselves! By combining the two fields, students develop the rigorous conceptual thinking and problem-solving abilities that characterise training in mathematics. At the same time, they are continually challenged by their computer science courses to put those ideas into practice. Advanced computer science subjects ranging from machine learning to cryptography to internet searching are often highly mathematical, so the solid training our joint programs provide are excellent preparations for graduate school or careers in industry. The joint honours program is particularly challenging and, therefore, particularly rewarding. Many of our best students follow this option and go on to complete PhD s in their choice of computer science or mathematics at the best universities in the world. They invariably say that their training in the joint honours program was decisive in their success.</p>
+
+                
+                
+                 <h3 class="p" style="font-weight: lighter; color: #780000;">Joint Major (or Honours) in Physics and Computer Science</h3>
+
+                 <p class="p">Computer science and physics are no strangers either. From the invention of randomized algorithms to study nuclear explosions during the top-secret Manhattan Project, to the invention of the World Wide Web at the CERN particle physics laboratory, physicists have been enthusiastic users and innovators when it comes to computers. As time goes on, large-scale computer simulations play an ever-increasing role in physics research, resulting an ever-increasing need for physicists with real training in computer science. On another front, the world internet speed record is currently held by scientists working to develop a worldwide distributed computing system for analyzing the avalanche of data expected to be generated by the next generation of experiments at that same CERN that invented the Web. A joint major in computer science and physics positions students to work as professional physicists, as software engineers, or somewhere in betsubjects and a wide range of other Science minors are available including Biology, Biotechnology, Earth and Planetary Sciences and Environment. You can even broaden your studies outside of Science and select a minor from Arts. You can choose from a huge list of minor and major concentrations in Arts including Economics, English Literature, Linguistics, Philosophy and many others. By combining a Computer Science or Software Engineering major with a minor you can really build the combined program of your choice!</p>
+
+                
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Minor in Computer Science</h3>
+
+                <p class="p">Perhaps your main interests lie outside of Computer Science, but you still have an interest in a smaller program in Computer Science. The Computer Science minor is a great way to combine some Computer Science studies with your main interests. If you end up really liking your Computer Science classes you can consider switching into the Computer Science Major program.</p>
+
+                <p class="p">For more information about the minors see the program listing page.</p>
+        </div>
+
+    </div>
+     
+
+    
+    
+
+
+    </div>
+     <div class="foot">
+        <div class="footLeft">
+      <p>© McGill University 2020 Credits</p>
+      All content related requests should be sent to<a href ="webadmin@cs.mcgill.ca"> webadmin at cs dot mcgill dot ca</a>
+    </div>
+         <div class="footRight">
+      <img src="images/mcgill cs logo.png" alt="mcgill cs logo" style="width:60%; height: 100px; margin-left: 60px;">
+    </div>
+      
+      </div>
+
+</body>
+
+</html>
+
+

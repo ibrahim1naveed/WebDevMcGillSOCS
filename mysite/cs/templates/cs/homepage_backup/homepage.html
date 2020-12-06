@@ -368,7 +368,47 @@
 	       src="{%static 'images\square.jpg' %}" alt="square">
           </div>
         </td>
-       </tr>
+        <td>
+          <div class="card">
+            <h2>{{post.title }}</h2>
+            <p>{{ post.content }}</p><img
+	       src="{% static 'images\square.jpg' %}" alt="square">
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <h2>{{post.title}}</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><img
+	       src="{% static 'images/square.jpg' %}" alt="square">
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="card">
+            <h2>News4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><img
+	       src="{% static 'images/square.jpg' %}" alt="square">
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <h2>News5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><img
+	       src="{% static 'images/square.jpg' %}" alt="square">
+          </div>
+  </div>
+  </td>
+  <td>
+    <div class="card">
+      <h2>News6</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><img
+	 src="{% static 'images/square.jpg' %}" alt="square">
+    </div>
+    </div>
+  </td>
+  </tr>
   </table>
   {% endfor %}
   </div>

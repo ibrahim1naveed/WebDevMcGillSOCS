@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+.wholeBar {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 250px;
+      position: relative;
+      top: 1px;
+      width: 100%;
+      background-image: url(images/image10.jpg);
+      background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    background-size: cover;
+    
+    
+      
+
+    }
+
+    .topbar {
+      position: absolute;
+      height: .018vw;
+      width: 100vw;
+      min-height: 15px;
+      font-size: clamp(10, 3vw, 13px);
+      padding-top: 5px;
+      padding-left: 16vw;
+      padding-right: 300px;
+      padding-bottom: 0.4vh;
+    }
+
+    div.topbar p {
+      color: black;
+      font-size: clamp(8px, 1.5rem, 20px);
+      width: 100%;
+    }
+
+    .header {
+      padding-top: 30px;
+      margin-bottom: 0px;
+      color: black;
+      padding-left: 16vw;
+      background: rgba(255, 255, 255, 0.5);
+      height: fit-content;
+    }
+
+    div.header p {
+      color: black;
+      font-size: clamp(20px, 1.5rem, 50px);
+      width: inherit;
+    }
+
+    div.header img {
+      opacity: 1;
+      min-width: 50px;
+      min-height: 75px;
+    }
+
+  
+
+    .navBar {
+      background: rgba(255, 255, 255, 0.5);
+      height: 40px;
+      color: black;
+      margin-top: 0px;
+      width: 100%;
+      height: 50px;
+      justify-content: space-evenly;
+      padding-left: 22vw;
+      display: flex;
+
+    }
+
+.navBar button {
+      background: rgba(243, 240, 240, 0);
+      height: 4vh;
+      width: fit-content;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-right: 4%;
+      border: none;
+      cursor: pointer;
+
+}
+
+
+.prospective ul, .academic ul {
+    position: absolute;
+    left: 0px;
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+    opacity: 0;
+    
+    transition: all 0.4s ease;
+    transform: translateY(10px);
+    
+    
+}
+
+.prospective, .academic {
+    position: relative;
+}
+
+.prospective a, .academic a {
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    
+}
+
+.prospective li, .academic li {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    left: 2px;
+}
+
+.prospective li:hover, .academic li:hover {
+          background-color: #C9C9C9;
+}
+
+.navBar button:focus + ul {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+    
+
+    
+
+    
+     
+
+    
+    
+
+.foot {
+      width: 100%;
+      height: 170px;
+      padding:30px;
+      
+      background-color: black;
+      
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      align-items: center;
+      padding-left: 16vw;
+
+
+}
+
+.footLeft {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      font-size:0.5;
+}
+
+.footRight {
+      grid-column-start: 2;
+      grid-column-end: 2;
+}
+
+    
+button {
+    padding: 0;
+    background: none;
+    border: none;
+    
+
+}
+button:hover {
+    background-color: grey;
+
+}
+
+.content {
+
+   
+    height: 200px;
+    
+
+}
+.sidebar {
+
+    float: left;
+    margin-left: 130px;
+}
+
+table {
+    border-spacing: 10px;
+    margin-top: 30px;
+    
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+tr:hover {
+    background-color: #808080;
+    
+}
+
+.center {
+   
+    margin-left: 50px;
+    float: right;
+    width: 100%;
+}
+
+.p {
+    margin-right: 100px;
+    margin-top: 15px;
+    word-spacing: 4px;
+    margin-left: 340px;
+}
+
+.p a  {
+    text-decoration: none;
+    color: #780000;
+    
+}
+
+.p li {
+
+}
+
+
+
+
+
+
+   
+  </style>
+
+ 
+</head>
+
+<body style="height: 2000px;">
+
+
+  <div class="container" style="width: 100%; padding: 0;">
+
+   
+     
+      <div class="wholeBar">
+
+    <!-- Topmost bar of the webpage -->
+    <div class="topbar">
+
+      <p> <b>McGill University | Université McGill</b> <a href=""
+          style="color: rgb(252, 38, 33); font-size: 15px; float: right; padding-right: 15px;">Login</a></p>
+    </div>
+
+
+
+    <!-- Main, middle bar of the webpage -->
+    <div class="header">
+      <img src="images/img4.png" alt="img4" style="height:9vw; width:8vw; margin: 1.56vw; "><span
+        style="top: 50px; font-size: 3vw; height:400px; max-width:200px;"> Department of <span
+          style="color:rgb(252, 38, 33);">Computer Science</span></span></div>
+    <!-- nav-bar -->
+
+   <div class="navBar">
+        <div class="prospective">
+            <button>Prospective</button>
+            <ul>
+                <li><a href="generalinfo.html">General Info</a></li>
+                <li><a href="whycs.html">Why CS?</a></li>
+                <li><a href="CEGEP.html">CEGEP</a></li>
+                <li><a href="freshman.html">Freshmen</a></li>
+                <li><a href="Major.html">Choosing a Major</a></li>
+                <li><a href="combiningstudies.html">Combining Studies</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="undergrad.html">Undergraduate</a></li>
+                <li><a href="transfers.html">Transfer</a></li>
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Academic</button>
+            <ul style="height: 150px;">
+                <li><a href="Undergraduate.html">Undergraduate</a></li>
+                <li><a href="Graduate.html">Graduate</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="TeachingAssitant.html">Teaching Assistant</a></li>
+                <li><a href="Funding.html">Funding</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Research</button>
+            <ul style="height: 50px;">
+                <li><a href="Areas.html">Areas</a></li>
+                <li><a href="TechReports.html">Tech Reports</a></li>
+               
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>People</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Staff.html">Staff</a></li>
+                <li><a href="Community.html">Community</a></li>
+               
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>News</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>Employment</button>
+            <ul style="height: 80px;">
+                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="Course Lecturer.html">Course Lecturer</a></li>
+                <li><a href="Priority.html">Priority Points</a></li>
+
+
+            </ul>
+
+        </div>
+
+        
+            <div class="prospective">
+            <button>Donate</button>
+            <ul style="height: 50px;">
+                <li><a href="Donate.html">Donate</a></li>
+                
+
+
+            </ul>
+
+        </div>
+           
+
+
+         <div class="prospective">
+            <button>About</button>
+            <ul style="height: 30px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="Events.html">Events</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+
+
+      
+    </div>
+
+
+          </div>
+  
+
+    <div class="content">
+          <div class="sidebar">
+                <table>
+                    <tr><td><mark>Prospective</mark></td></tr>
+                    <tr><td><a href="generalinfo.html" style="color: black; text-decoration: none; ">General Info</a></td></tr>
+                    <tr><td><a href="whycs.html" style="color: black; text-decoration: none;">Why CS?</a></td></tr>
+                    <tr><td><a href="CEGEP.html" style="color: black; text-decoration: none;">CEGEP</a></td></tr>
+                    <tr><td><a href="freshman.html" style="color: black; text-decoration: none;">Freshman</a></td></tr>
+                    <tr><td><b><a href="#" style="color: black; text-decoration: none;">Choosing a Major</a></b></td></tr>
+                    <tr><td><a href="combiningstudies.html" style="color: black; text-decoration: none;">Combining Studies</a></td></tr>
+                    <tr><td><a href="internships.html" style="color: black; text-decoration: none;">Internships</a></td></tr>
+                    <tr><td><a href="undergrad.html" style="color: black; text-decoration: none;">Undergrads</a></td></tr>
+                    <tr><td><a href="transfers.html" style="color: black; text-decoration: none;">Transfers</a></td></tr>
+                </table>
+          </div>
+        
+        <div class="img"><img src="images/img10.jpg" style="width: 1098px; height: 400px; margin-left: 60px; "/></div>
+
+        <div class="center">
+                <h2 class="p" style="font-weight: lighter; color: #780000;">Choosing a Major</h2>
+                
+                <p class="p">There are many possible options for studying Computer Science or Software Engineering at McGill. The School of Computer Science offers many programs, all of which are listed <a href="https://www.cs.mcgill.ca/academic/undergrad/overview">here</a>. On this page we provide you with some clear guidance on how to pick the right degree program for you. If, after reviewing all of the material, you have some specific questions, then ask us for <a href="https://www.cs.mcgill.ca/about/contacts">some personal advice</a>.</p>
+
+                
+                    <br />
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Bachelor of Science - B.Sc. (Faculty of Science)</h3>
+
+                <p class="p">Most of our students choose a B.Sc. degree program. The B.Sc. degree is suitable for you if:</p>
+                
+                <ul style="margin-left:390px; margin-right: 100px;">
+                    <li>you are coming from a high school program outside of Quebec and you have enjoyed both Mathematics and Science; or</li>
+                    <li> you are coming from any Science CEGEP program from within Quebec.</li>
+                    
+                </ul>
+
+                <p class="p">There are three main programs available in the B.Sc. program:</p>
+                
+
+                 <ul style="margin-left:390px; margin-right: 100px;">
+                    <li>Major in Computer Science (also available with a Computer Games Option)</li>
+                    <li> Honours in Computer Science</li>
+                     <li>Major in Software Engineering</li>
+
+                </ul>
+
+                <p class="p">The Major in Computer Science contains core required courses, plus a wide choice of higher-level complementary courses. If you choose this program, you will get a good general background in foundational and applied Computer Science and you will get to choose from a wide variety of complementary courses that you will let you explore some more advanced topics. With the correct choice of courses you could prepare yourself for employment or for further graduate studies.</p>
+
+                <p class="p">The Honours program requires more courses than the Major, plus there are some core courses which have a special Honours version. An Honours program gives you a deeper and more comprehensive education in Computer Science.</p>
+
+                <p class="p">The Major in Software Engineering also contains a core of Computer Science courses, but also contains more courses pertaining to the principled development of software. A more detailed explanation of the difference between the Computer Science and Software Engineering majors is given further on.</p>
+                
+                <p class="p">If you decide on a B.Sc. degree with a Major/Honours in Computer Science or Software Engineering, then you should choose "Faculty of Science" on your application form and choose the Physical, Earth, Math and Computer Sciences group.</p>
+                
+                <p class="p">Note that there is a lot of flexibility in the B.Sc. programs and you can combine your Computer Science studies with other disciplines by doing a joint degree or by taking a minor in many other fields. <a href="https://www.cs.mcgill.ca/prospective/majors/combining">(see the Combining Studies page)</a></p>
+
+                <p class="p">For detailed B.Sc. program information, see the <a href="https://www.cs.mcgill.ca/academic/undergrad/bsc">Program Listing Page</a>.</p>
+
+
+
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Bachelor of Arts - B.A. (Faculty of Arts)</h3>
+                <p class="p">Some students choose to complete a B.A. degree. In fact, it is possible to get quite a strong training in Computer Science within the B.A. degree program by taking both the Computer Science Major Concentration along with the Supplementary Minor in Computer Science. In terms of Computer Science content, this is almost the same at the B.Sc. major in Computer Science. You will be taking the same Computer Science classes and you will work in the same state-of-the-art computer labs as students in the B.Sc. program. In fact, in the classes and labs there are no distinctions between students in the B.A. program and students in the B.Sc. program - they are equal.</p>
+
+                <p class="p">The B.A. degree is suitable for you if your background does not include very much Science, but you do have a good background in Mathematics and you have an interest and aptitude for logical reasoning.</p>
+                <p class="p">If you decide on a B.A. degree, then you should choose "Faculty of Arts" on your application form.</p>
+                <p class="p">For detailed B.A. program information, see the <a href="https://www.cs.mcgill.ca/academic/undergrad/ba">Program Listing Page</a>.</p>
+
+                
+                 <h3 class="p" style="font-weight: lighter; color: #780000;">Bachelor of Arts and Science - B.A.& B.Sc. (Joint program offered by the Faculties of Arts and Science)</h3>
+
+                  <p class="p">There is one final possibility, and that is the combined B.A.&Sc. degree, which is jointly offered by the Faculty of Science and the Faculty of Arts. In the B.A.&Sc degree you can combine a 36-credit Major Concentration in Computer Science or Software Engineering with a Major Concentration or two Minor Concentrations from Arts. For example, you could combine your a Computer Science studies with areas such Economics, Anthropology, Philosophy, Linguistics, Geography and many other possibilities. With the B.Sc. degree you will learn all about Software Engineering and whatever else interests you. You will have the opportunity to take a wide range of classes with both foundational and practical applications. In addition, you can choose your complementary and elective courses to learn more about computer applications or to broaden your studies in Arts, Sciences or Management.</p>
+                    <p class="p">For students coming from CEGEP, the B.Sc. degree fits into 90 credits and can be completed in three years.</p>
+                    <p class="p">The B.S.E degree is structured so that in addition to courses specific to Software Engineering, you must also take many engineering-specific courses that are common to the Engineering degrees, plus more courses related to hardware. For example, students in the B.S.E. program must take required courses such as Fundamentals of Electrical Engineering, Circuit Analysis, Fundamentals of Signals and Systems, and so on. Since the Engineering courses require quite a few credits, there is less flexibility for studying more software courses and many fewer electives. The inclusion of all of these extra Engineering courses also means that students must take more total credits. For students coming from CEGEP, the B.S.E. degree is 112-114 credits, meaning that it takes at least 3 1/2 years to complete. Students graduating from this program are eligible for registration as professional engineers, since the program has been accredited by the Canadian Engineering Accreditation Board.</p>
+                    <p class="p">Students in both programs have a wide variety of job opportunities and access to internship opportunities. Students in the B.Sc. program have more flexibility to choose their programs and can, for example, select courses that also prepare them for a career in <a href="https://www.cs.mcgill.ca/academic/undergrad/games">game programming</a> or to study a minor in Management or Marketing.</p>
+        </div>
+
+    </div>
+     
+
+    
+    
+
+
+    </div>
+     <div class="foot">
+        <div class="footLeft">
+      <p>© McGill University 2020 Credits</p>
+      All content related requests should be sent to<a href ="webadmin@cs.mcgill.ca"> webadmin at cs dot mcgill dot ca</a>
+    </div>
+         <div class="footRight">
+      <img src="images/mcgill cs logo.png" alt="mcgill cs logo" style="width:60%; height: 100px; margin-left: 60px;">
+    </div>
+      
+      </div>
+
+</body>
+
+</html>
+

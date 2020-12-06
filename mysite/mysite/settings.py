@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import mysql.connector
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +27,7 @@ SECRET_KEY = 'h5&0g^k67^jo=j=ad$#fuag5p$#+-9c0)wj_ub1(1amzb5nrzi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fall2020-comp307.cs.mcgill.ca']
 
 
 # Application definition
@@ -76,8 +78,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cs307-group25-DB',
+        'USER': 'cs307-group25',
+        'PASSWORD': 'dLj8MG6JbUgXASxQ',
+        'HOST': '127.0.0.1',
     }
 }
 
@@ -118,4 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATIC_ROOT = 'mysite/mysite/static'
 STATIC_URL = '/static/'
+STATICFILES_DIR = (os.path.join(BASE_DIR, 'mysite/cs/static/images'))
+

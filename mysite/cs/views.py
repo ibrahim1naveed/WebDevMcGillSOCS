@@ -9,7 +9,10 @@ def index(request):
     }
     return render(request, 'cs/homepage.html', context)
 
+def cepep(request):
+    return render(request, 'cs/cegep.html')
+
 def about(request):
-    return HttpResponse("<p> lolz </p>")
+    return HttpResponse("<p> test </p>")
 
 # Create your views here.
