@@ -316,7 +316,7 @@
     <!-- Topmost bar of the webpage -->
     <div class="topbar">
 
-      <p> <b>McGill University | Université McGill</b> <a href=""
+      <p> <b>McGill University | Université McGill</b> <a href="../../admin"
           style="color: rgb(252, 38, 33); font-size: 15px; float: right; padding-right: 15px;">Login</a></p>
     </div>
 
@@ -357,21 +357,7 @@
     <h1 style="color:rgb(252, 38, 33); padding-left:16vw; padding-bottom:20px; padding-top: 40px; font-size:2.5vw;">News
       & Events</h1>
 
-    {% for post in posts %}
-    <table style="margin-left:16vw; text-align: center; margin-top:10px; margin: 0px auto;  border-collapse: separate;
-    border-spacing: 0 30px;">
-      <tr style="padding-bottom:40px;">
-        <td>
-          <div class="card">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.content }}</p><img
-	       src="{%static 'images\square.jpg' %}" alt="square">
-          </div>
-        </td>
-       </tr>
-  </table>
-  {% endfor %}
-  </div>
+
 
   <div class="foot">
     <div class="footLeft">

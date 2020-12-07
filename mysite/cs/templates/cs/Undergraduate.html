@@ -1,0 +1,500 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+.wholeBar {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 250px;
+      position: relative;
+      top: 1px;
+      width: 100%;
+      background-image: url(images/image10.jpg);
+      background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    background-size: cover;
+    
+    
+      
+
+    }
+
+    .topbar {
+      position: absolute;
+      height: .018vw;
+      width: 100vw;
+      min-height: 15px;
+      font-size: clamp(10, 3vw, 13px);
+      padding-top: 5px;
+      padding-left: 16vw;
+      padding-right: 300px;
+      padding-bottom: 0.4vh;
+    }
+
+    div.topbar p {
+      color: black;
+      font-size: clamp(8px, 1.5rem, 20px);
+      width: 100%;
+    }
+
+    .header {
+      padding-top: 30px;
+      margin-bottom: 0px;
+      color: black;
+      padding-left: 16vw;
+      background: rgba(255, 255, 255, 0.5);
+      height: fit-content;
+    }
+
+    div.header p {
+      color: black;
+      font-size: clamp(20px, 1.5rem, 50px);
+      width: inherit;
+    }
+
+    div.header img {
+      opacity: 1;
+      min-width: 50px;
+      min-height: 75px;
+    }
+
+  
+
+    .navBar {
+      background: rgba(255, 255, 255, 0.5);
+      height: 40px;
+      color: black;
+      margin-top: 0px;
+      width: 100%;
+      height: 50px;
+      justify-content: space-evenly;
+      padding-left: 22vw;
+      display: flex;
+
+    }
+
+.navBar button {
+      background: rgba(243, 240, 240, 0);
+      height: 4vh;
+      width: fit-content;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-right: 4%;
+      border: none;
+      cursor: pointer;
+}
+
+.prospective ul, .academic ul {
+    position: absolute;
+    left: 0px;
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+    opacity: 0;
+    
+    transition: all 0.4s ease;
+    transform: translateY(10px);
+    
+    
+}
+
+.prospective, .academic {
+    position: relative;
+}
+
+.prospective a, .academic a {
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    
+}
+
+.prospective li, .academic li {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    left: 2px;
+}
+
+.prospective li:hover, .academic li:hover {
+          background-color: #C9C9C9;
+}
+
+.navBar button:focus + ul {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+    
+
+    
+
+    
+     
+
+    
+    
+
+.foot {
+      width: 100%;
+      height: 170px;
+      padding:30px;
+      
+      background-color: black;
+      
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      align-items: center;
+      padding-left: 16vw;
+
+
+}
+
+.footLeft {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      font-size:0.5;
+}
+
+.footRight {
+      grid-column-start: 2;
+      grid-column-end: 2;
+}
+
+    
+button {
+    padding: 0;
+    background: none;
+    border: none;
+    
+
+}
+button:hover {
+    background-color: grey;
+
+}
+
+.content {
+
+   
+    height: 200px;
+    
+
+}
+.sidebar {
+
+    float: left;
+    margin-left: 130px;
+}
+
+table {
+    border-spacing: 10px;
+    margin-top: 30px;
+    
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+tr:hover {
+    background-color: #808080;
+    
+}
+
+.center {
+   
+    margin-left: 50px;
+    float: right;
+    width: 100%;
+}
+
+.p {
+    margin-right: 100px;
+    margin-top: 15px;
+    word-spacing: 4px;
+    margin-left: 340px;
+}
+
+.p a  {
+    text-decoration: none;
+    color: #780000;
+    
+}
+
+.p li {
+
+}
+
+
+
+
+
+
+   
+  </style>
+
+ 
+</head>
+
+<body style="height: 1200px;">
+
+
+  <div class="container" style="width: 100%; padding: 0;">
+
+   
+     
+      <div class="wholeBar">
+
+    <!-- Topmost bar of the webpage -->
+    <div class="topbar">
+
+      <p> <b>McGill University | Université McGill</b> <a href="../../admin"
+          style="color: rgb(252, 38, 33); font-size: 15px; float: right; padding-right: 15px;">Login</a></p>
+    </div>
+
+
+
+    <!-- Main, middle bar of the webpage -->
+    <div class="header">
+      <img src="{% static 'images/img4.png' %}" alt="img4" style="height:9vw; width:8vw; margin: 1.56vw; "><span
+        style="top: 50px; font-size: 3vw; height:400px; max-width:200px;"> Department of <span
+          style="color:rgb(252, 38, 33);">Computer Science</span></span></div>
+    <!-- nav-bar -->
+
+    <div class="navBar">
+        <div class="prospective">
+            <button>Prospective</button>
+            <ul>
+                <li><a href="generalinfo">General Info</a></li>
+                <li><a href="whycs">Why CS?</a></li>
+                <li><a href="cegep">CEGEP</a></li>
+                <li><a href="freshman">Freshmen</a></li>
+                <li><a href="major">Choosing a Major</a></li>
+                <li><a href="combiningstudies">Combining Studies</a></li>
+                <li><a href="internships">Internships</a></li>
+                <li><a href="undergrad">Undergraduate</a></li>
+                <li><a href="transfers">Transfer</a></li>
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Academic</button>
+            <ul style="height: 150px;">
+                <li><a href="Undergraduate">Undergraduate</a></li>
+                <li><a href="https://www.cs.mcgill.ca/academic/graduate/overview/">Graduate</a></li>
+                <li><a href="https://www.cs.mcgill.ca/academic/courses/">Courses</a></li>
+                <li><a href="https://www.cs.mcgill.ca/academic/ta/">Teaching Assistant</a></li>
+                <li><a href="https://www.cs.mcgill.ca/academic/funding/overview">Funding</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>Research</button>
+            <ul style="height: 50px;">
+                <li><a href="areas">Areas</a></li>
+                <li><a href="https://www.cs.mcgill.ca/research/tech_reports/">Tech Reports</a></li>
+               
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>People</button>
+            <ul style="height: 80px;">
+                <li><a href="faculty">Faculty</a></li>
+                <li><a href="https://www.cs.mcgill.ca/people/staff/">Staff</a></li>
+                <li><a href="https://www.cs.mcgill.ca/people/community/">Community</a></li>
+               
+            </ul>
+
+        </div>
+
+        <div class="prospective">
+            <button>News</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="https://www.cs.mcgill.ca/events/">Events</a></li>
+
+            </ul>
+
+        </div>
+
+         <div class="prospective">
+            <button>Employment</button>
+            <ul style="height: 80px;">
+                <li><a href="faculty">Faculty</a></li>
+                <li><a href="https://www.cs.mcgill.ca/employment/lecturer/">Course Lecturer</a></li>
+                <li><a href="https://www.cs.mcgill.ca/employment/lecturer-info/">Priority Points</a></li>
+
+
+            </ul>
+
+        </div>
+
+        
+            <div class="prospective">
+            <button>Donate</button>
+            <ul style="height: 30px;">
+                <li><a href="Donate.html">Donate</a></li>
+                
+
+
+            </ul>
+
+        </div>
+           
+
+
+         <div class="prospective">
+            <button>About</button>
+            <ul style="height: 50px;">
+                <li><a href="News.html">News</a></li>
+                <li><a href="https://www.cs.mcgill.ca/events/">Events</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+
+
+      
+    </div>
+
+          </div>
+  
+  
+
+    <div class="content">
+          <div class="sidebar">
+                <table>
+                    <tr><td><mark>Academic</mark></td></tr>
+                    <tr><td><b><a href="#" style="color: black; text-decoration: none; ">Undergraduate</a></b></td></tr>
+                    <tr><td><a href="https://www.cs.mcgill.ca/academic/graduate/overview/" style="color: black; text-decoration: none;">Graduate</a></td></tr>
+                    <tr><td><a href="https://www.cs.mcgill.ca/academic/courses/" style="color: black; text-decoration: none;">Courses</a></td></tr>
+                    <tr><td><a href="https://www.cs.mcgill.ca/academic/ta/" style="color: black; text-decoration: none;">Teaching Assistant</a></td></tr>
+                    <tr><td><a href="https://www.cs.mcgill.ca/academic/funding/overview/" style="color: black; text-decoration: none;">Funding</a></td></tr>
+                    
+                </table>
+          </div>
+        
+        <div class="img"><img src="{% static 'images/img13.png' %}" style="width: 1102px; height: 400px; margin-left: 60px; "/></div>
+
+        <div class="center">
+                <h3 class="p" style="font-weight: lighter; color: #780000;">Overview</h3>
+
+
+                <p class="p">The School of Computer Science strives to promote a healthy and supportive community atmosphere for everyone. Our goal is to create, encourage, and support student's academic, social and professional opportunities in the computer sciences and to promote the breadth of the field and its diverse community.</p>
+
+                 <h4 class="p" style="font-weight: lighter; color: #780000;">Why study Computer Science?</h4>
+
+                <p class="p">Computer science plays a pivotal role in our economy and culture today. It is a foundational science in itself, and it also interacts with many other fields in the natural sciences, social sciences, and engineering. These interactions are changing these fields at a fundamental level, and have led to emerging subfields known as “Computational X” where X can be Chemistry, Physics, Biology, Psychology, Linguistics and so on. Our courses and wide range of programs provide opportunities for students interested in Computer Science for itself, and also for students in different fields who wish to learn about computing. Studying Computer Science gives one a unique set of analytical skills and tools that may be useful for careers in many fields. In particular, computational thinking will likely be crucial for understanding and shaping the world in the coming decades.</p>
+
+                <p class="p">Studying Computer Science involves learning the theory and practice of how to design and implement computer and information systems. Students not only learn computer programming, but they also learn more abstract skills for representing, processing, managing, and analyzing information (data) and computation. A key component is the study of algorithms. An algorithm presents a detailed sequence of actions solving a particular task. A computer program is just the implementation of an algorithm in a specific programming language, which enables a computer to execute the algorithm.</p>
+
+                 <h4 class="p" style="font-weight: lighter; color: #780000;">What are the subject areas of Computer Science?</h4>
+
+                <p class="p">Computer Science is split into many different areas. Examples are:</p>
+
+                <ul style="margin-left:390px; margin-right: 100px;">
+                    <li>The study of algorithms and data structures</li>
+                    <li>Programming languages and methodology</li>
+                    <li>Theory of computation</li>
+
+                    <li>Software engineering (the design of large software systems)</li>
+                    <li>Computer architecture (the structure of the hardware)</li>
+                    <li>Communication between computers</li>
+
+                    <li>Operating systems (the software that shields users from the underlying hardware)</li>
+                    <li>Database systems (software that handles large amounts of data efficiently)</li>
+                    <li>Artificial intelligence and Machine Learning (algorithms inspired by human information processing)</li>
+
+                    <li>Visual Computing, including Computer Vision (algorithms and systems that let computers see and recognize their environment) and Computer Graphics</li>
+                    <li>Robotics (algorithms that control robots)</li>
+                    <li>Computational biology (algorithms and methods that address problems inspired by biology)</li>
+                    
+                </ul>
+
+                <h4 class="p" style="font-weight: lighter; color: #780000;">Where does a Computer Science degree lead?</h4>
+
+                <p class="p">A degree in Computer Science offers excellent job prospects. As the use of computers and specialized software plays a crucial role in business, science, and our personal life, our graduates are in high demand. Computer scientists find jobs not only in software development, but aso in consulting, research, and project management. As computer scientists often develop the software for a specific application domain (e.g., business, engineering, medicine), they must be prepared and willing to get to know their application area. Similarly, those who are specialized in another area can always benefit from knowing more about computing. Even just a few courses in Computer Science can give one a large edge in approaching problems that involve computing, understanding how to solve them, and how to communicate with computing experts.</p>
+                
+                <p class="p">Where to begin? The School of Computer Science offers a wide range of programs within several degree programs: Bachelor of Science, Bachelor of Arts, Bachelor of Arts & Science, and Bachelor of Engineering. Most programs start with the same set of basic courses allowing students to decide on their exact program once they get a basic understanding of the discipline. All students planning to enter Computer Science programs are strongly encouraged to make an appointment with an academic adviser through the School's Undergraduate Student Affairs Office (see <a href="https://www.cs.mcgill.ca/academic/undergrad/advising">Undergraduate Advising</a>).</p>
+                
+
+
+
+        </div>
+
+    </div>
+     
+
+    
+    
+
+
+    </div>
+     <div class="foot">
+        <div class="footLeft">
+      <p>© McGill University 2020 Credits</p>
+      All content related requests should be sent to<a href ="webadmin@cs.mcgill.ca"> webadmin at cs dot mcgill dot ca</a>
+    </div>
+         <div class="footRight">
+      <img src="{% static 'images/mcgill cs logo.png' %}" alt="mcgill cs logo" style="width:60%; height: 100px; margin-left: 60px;">
+    </div>
+      
+      </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>

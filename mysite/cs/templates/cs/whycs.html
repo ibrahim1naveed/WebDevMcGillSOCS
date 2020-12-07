@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -285,7 +286,7 @@ tr:hover {
     <!-- Topmost bar of the webpage -->
     <div class="topbar">
 
-      <p> <b>McGill University | Université McGill</b> <a href=""
+      <p> <b>McGill University | Université McGill</b> <a href="../../admin"
           style="color: rgb(252, 38, 33); font-size: 15px; float: right; padding-right: 15px;">Login</a></p>
     </div>
 
@@ -293,7 +294,7 @@ tr:hover {
 
     <!-- Main, middle bar of the webpage -->
     <div class="header">
-      <img src="images/img4.png" alt="img4" style="height:9vw; width:8vw; margin: 1.56vw; "><span
+      <img src="{% static 'images/img4.png' %}" alt="img4" style="height:9vw; width:8vw; margin: 1.56vw; "><span
         style="top: 50px; font-size: 3vw; height:400px; max-width:200px;"> Department of <span
           style="color:rgb(252, 38, 33);">Computer Science</span></span></div>
     <!-- nav-bar -->
@@ -302,15 +303,15 @@ tr:hover {
         <div class="prospective">
             <button>Prospective</button>
             <ul>
-                <li><a href="generalinfo.html">General Info</a></li>
-                <li><a href="whycs.html">Why CS?</a></li>
-                <li><a href="CEGEP.html">CEGEP</a></li>
-                <li><a href="freshman.html">Freshmen</a></li>
-                <li><a href="Major.html">Choosing a Major</a></li>
-                <li><a href="combiningstudies.html">Combining Studies</a></li>
-                <li><a href="internships.html">Internships</a></li>
-                <li><a href="undergrad.html">Undergraduate</a></li>
-                <li><a href="transfers.html">Transfer</a></li>
+                <li><a href="generalinfo">General Info</a></li>
+                <li><a href="whycs">Why CS?</a></li>
+                <li><a href="cegep">CEGEP</a></li>
+                <li><a href="freshman">Freshmen</a></li>
+                <li><a href="major">Choosing a Major</a></li>
+                <li><a href="combiningstudies">Combining Studies</a></li>
+                <li><a href="internships">Internships</a></li>
+                <li><a href="undergrad">Undergraduate</a></li>
+                <li><a href="transfers">Transfer</a></li>
             </ul>
 
         </div>
@@ -318,9 +319,9 @@ tr:hover {
         <div class="prospective">
             <button>Academic</button>
             <ul style="height: 150px;">
-                <li><a href="Undergraduate.html">Undergraduate</a></li>
-                <li><a href="Graduate.html">Graduate</a></li>
-                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Undergraduate">Undergraduate</a></li>
+                <li><a href="Graduate">Graduate</a></li>
+                <li><a href="Courses">Courses</a></li>
                 <li><a href="TeachingAssitant.html">Teaching Assistant</a></li>
                 <li><a href="Funding.html">Funding</a></li>
                 
@@ -331,7 +332,7 @@ tr:hover {
         <div class="prospective">
             <button>Research</button>
             <ul style="height: 50px;">
-                <li><a href="Areas.html">Areas</a></li>
+                <li><a href="areas">Areas</a></li>
                 <li><a href="TechReports.html">Tech Reports</a></li>
                
             </ul>
@@ -341,7 +342,7 @@ tr:hover {
          <div class="prospective">
             <button>People</button>
             <ul style="height: 80px;">
-                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="faculty">Faculty</a></li>
                 <li><a href="Staff.html">Staff</a></li>
                 <li><a href="Community.html">Community</a></li>
                
@@ -362,7 +363,7 @@ tr:hover {
          <div class="prospective">
             <button>Employment</button>
             <ul style="height: 80px;">
-                <li><a href="Faculty.html">Faculty</a></li>
+                <li><a href="faculty">Faculty</a></li>
                 <li><a href="Course Lecturer.html">Course Lecturer</a></li>
                 <li><a href="Priority.html">Priority Points</a></li>
 
@@ -410,19 +411,19 @@ tr:hover {
           <div class="sidebar">
                 <table>
                     <tr><td><mark>Prospective</mark></td></tr>
-                    <tr><td><a href="generalinfo.html" style="color: black; text-decoration: none; ">General Info</a></td></tr>
+                    <tr><td><a href="generalinfo" style="color: black; text-decoration: none; ">General Info</a></td></tr>
                     <tr><td><b><a href="#" style="color: black; text-decoration: none;">Why CS?</a></b></td></tr>
-                    <tr><td><a href="CEGEP.html" style="color: black; text-decoration: none;">CEGEP</a></td></tr>
-                    <tr><td><a href="freshman.html" style="color: black; text-decoration: none;">Freshman</a></td></tr>
-                    <tr><td><a href="major.html" style="color: black; text-decoration: none;">Choosing a Major</a></td></tr>
-                    <tr><td><a href="combiningstudies.html" style="color: black; text-decoration: none;">Combining Studies</a></td></tr>
-                    <tr><td><a href="internships.html" style="color: black; text-decoration: none;">Internships</a></td></tr>
-                    <tr><td><a href="undergrad.html" style="color: black; text-decoration: none;">Undergrads</a></td></tr>
-                    <tr><td><a href="transfers.html" style="color: black; text-decoration: none;">Transfers</a></td></tr>
+                    <tr><td><a href="cegep" style="color: black; text-decoration: none;">CEGEP</a></td></tr>
+                    <tr><td><a href="freshman" style="color: black; text-decoration: none;">Freshman</a></td></tr>
+                    <tr><td><a href="major" style="color: black; text-decoration: none;">Choosing a Major</a></td></tr>
+                    <tr><td><a href="combiningstudies" style="color: black; text-decoration: none;">Combining Studies</a></td></tr>
+                    <tr><td><a href="internships" style="color: black; text-decoration: none;">Internships</a></td></tr>
+                    <tr><td><a href="undergrad" style="color: black; text-decoration: none;">Undergrads</a></td></tr>
+                    <tr><td><a href="transfers" style="color: black; text-decoration: none;">Transfers</a></td></tr>
                 </table>
           </div>
         
-        <div class="img"><img src="images/image5.png" style="width: 1102px; height: 400px; margin-left: 60px; "/></div>
+        <div class="img"><img src="{% static 'images/image5.png' %}" style="width: 1102px; height: 400px; margin-left: 60px; "/></div>
 
         <div class="center">
                 <h2 class="p" style="font-weight: lighter; color: #780000;">Why CS?</h2>
@@ -513,7 +514,7 @@ tr:hover {
       All content related requests should be sent to<a href ="webadmin@cs.mcgill.ca"> webadmin at cs dot mcgill dot ca</a>
     </div>
          <div class="footRight">
-      <img src="images/mcgill cs logo.png" alt="mcgill cs logo" style="width:60%; height: 100px; margin-left: 60px;">
+      <img src="{% static 'images/mcgill cs logo.png' %}" alt="mcgill cs logo" style="width:60%; height: 100px; margin-left: 60px;">
     </div>
       
       </div>
